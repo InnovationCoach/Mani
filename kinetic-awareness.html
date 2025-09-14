@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === PAGE TITLE - This appears in the browser tab === -->
+    <title>Kinetic Awareness Program Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Hide the default cursor for the custom one */
+            cursor: none;
+        }
+
+        /* Custom Cursor Follower */
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 9999;
+            transition: width 0.3s, height 0.3s;
+        }
+        .cursor-outline {
+            width: 40px;
+            height: 40px;
+            border: 2px solid rgba(14, 165, 233, 0.5); /* sky-500 for this page theme */
+            border-radius: 50%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 9999;
+            transition: all 0.2s ease-out;
+        }
+        /* Hide custom cursor on mobile */
+        @media (max-width: 768px) {
+            body {
+                cursor: auto;
+            }
+            .cursor-dot, .cursor-outline {
+                display: none;
+            }
+        }
+        
+        /* Animation for scrolling sections into view */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-200">
+
+    <!-- Custom Cursor Elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Header & Navigation -->
+    <header class="bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-white">Mani Golzary</a>
+            <a href="index.html#projects" class="text-slate-300 hover:text-sky-400 transition-colors">&larr; Back to Projects</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 md:py-24">
+        
+        <!-- Project Hero -->
+        <section class="fade-in-section text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">Kinetic Awareness — Moving Art for Change</h1>
+            <p class="text-lg text-slate-400 max-w-3xl mx-auto">A 9-week program where students explore the physics of motion, culminating in an art event to raise environmental awareness and build interactive kinetic sculptures.</p>
+        </section>
+
+        <img src="https://images.pexels.com/photos/1110065/pexels-photo-1110065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="A dynamic kinetic sculpture" class="fade-in-section w-full max-h-[500px] h-auto object-cover rounded-lg my-12 shadow-2xl shadow-sky-900/20">
+
+        <!-- Program at a Glance -->
+        <section class="fade-in-section grid md:grid-cols-3 gap-8 text-center my-16">
+            <div class="bg-slate-800 p-6 rounded-lg">
+                <h3 class="text-sky-400 font-bold text-lg mb-2">Duration</h3>
+                <p class="text-2xl font-semibold">9 Weeks</p>
+            </div>
+            <div class="bg-slate-800 p-6 rounded-lg">
+                <h3 class="text-sky-400 font-bold text-lg mb-2">Core Focus</h3>
+                <p class="text-2xl font-semibold">Physics in Motion</p>
+            </div>
+            <div class="bg-slate-800 p-6 rounded-lg">
+                <h3 class="text-sky-400 font-bold text-lg mb-2">Final Outcome</h3>
+                <p class="text-2xl font-semibold">Kinetic Art Event</p>
+            </div>
+        </section>
+        
+        <!-- Main Content -->
+        <article class="max-w-4xl mx-auto text-slate-300 text-lg leading-relaxed space-y-12">
+            <section class="fade-in-section">
+                <h2 class="text-3xl font-bold text-white mb-4">Program Philosophy</h2>
+                <div class="space-y-4">
+                    <p>This isn’t just another checklist—it’s a personal power-up guide for becoming a stronger thinker, collaborator, and change-maker. In this project, students don’t just complete tasks; they become strategic thinkers, innovative designers, and culturally aware, adaptable leaders.</p>
+                    <p>The skills developed aren’t just for this project — they’re life skills that will make students future-ready for any challenge, career, or collaboration.</p>
+                </div>
+            </section>
+
+            <section class="fade-in-section">
+                <h2 class="text-3xl font-bold text-white mb-8">The Learning Journey</h2>
+                <div class="space-y-6">
+                    <!-- Phase 1 -->
+                    <div class="bg-slate-800/50 p-6 rounded-lg border-l-4 border-sky-500">
+                        <h3 class="font-bold text-white text-xl mb-2">Phase 1: Exploration (Weeks 1-4)</h3>
+                        <p class="text-slate-400">Learners choose and explore the physics of motion through hands-on activities. They will learn how to use the scientific process as a tool to gain a better understanding of the connection between Mathematics and the principles of motion in Physics.</p>
+                    </div>
+                    <!-- Phase 2 -->
+                    <div class="bg-slate-800/50 p-6 rounded-lg border-l-4 border-sky-500">
+                        <h3 class="font-bold text-white text-xl mb-2">Phase 2: Creation & Awareness (Weeks 5-9)</h3>
+                        <p class="text-slate-400">Students get together and organize an event to raise awareness about an environmental issue. Each group of learners uses their understanding to build an interactive prototype, demonstrating their concerns through a fusion of art, physics, and creativity.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="fade-in-section">
+                <h2 class="text-3xl font-bold text-white mb-8 text-center">Core Competencies Developed</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Skill Card 1 -->
+                    <div class="bg-slate-800 p-6 rounded-lg text-center">
+                        <div class="flex-shrink-0 text-sky-400 w-12 h-12 mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h12M3.75 3h16.5M3.75 3v16.5M13.5 6h4.5m-4.5 3h4.5m-4.5 3h4.5m4.5 3v-11.25A2.25 2.25 0 0018 3H6a2.25 2.25 0 00-2.25 2.25v11.25" /></svg>
+                        </div>
+                        <h4 class="font-bold text-white">Strategic Thinking</h4>
+                        <p class="text-slate-400 text-base">Planning, goal setting, and organizing ideas.</p>
+                    </div>
+                    <!-- Skill Card 2 -->
+                    <div class="bg-slate-800 p-6 rounded-lg text-center">
+                        <div class="flex-shrink-0 text-sky-400 w-12 h-12 mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 100 15 7.5 7.5 0 000-15zM21 21l-5.197-5.197" /></svg>
+                        </div>
+                        <h4 class="font-bold text-white">Analytical Thinking</h4>
+                        <p class="text-slate-400 text-base">Interpreting data and making logical conclusions.</p>
+                    </div>
+                    <!-- Skill Card 3 -->
+                    <div class="bg-slate-800 p-6 rounded-lg text-center">
+                        <div class="flex-shrink-0 text-sky-400 w-12 h-12 mx-auto mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c1.356 0 2.695-.178 4-.5M12 21c-1.355 0-2.695-.178-4-.5m8 0c-2.671 0-5.333 0-8 0m8 0c1.481 0 2.891-.402 4.125-1.125M4 14.5c1.234.723 2.644 1.125 4.125 1.125m-8.25 0a48.606 48.606 0 01-2.47-5.402c-.22-.622-.268-1.267-.22-1.926.048-.659.22-1.298.49-1.898.27-.6.65-1.158 1.1-1.636a48.607 48.607 0 012.75-3.033C7.57 3.34 9.21 3 11 3h2c1.79 0 3.43.34 4.88.983a48.607 48.607 0 012.75 3.033c.45.478.83.1036 1.1 1.636.27.6.442 1.24.49 1.898.048.659-.002 1.304-.22 1.926a48.606 48.606 0 01-2.47 5.402" /></svg>
+                        </div>
+                        <h4 class="font-bold text-white">Engineering Design</h4>
+                        <p class="text-slate-400 text-base">Using the design process to create, test, and improve solutions.</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="text-center py-8 border-t border-slate-800">
+        <p class="text-slate-500">&copy; 2025 Mani Golzary. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Scroll Animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.fade-in-section').forEach(section => {
+                observer.observe(section);
+            });
+
+            // Custom cursor follower
+            const cursorDot = document.querySelector(".cursor-dot");
+            const cursorOutline = document.querySelector(".cursor-outline");
+            window.addEventListener("mousemove", function (e) {
+                const posX = e.clientX;
+                const posY = e.clientY;
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
+                cursorOutline.animate({
+                    left: `${posX}px`,
+                    top: `${posY}px`
+                }, { duration: 500, fill: "forwards" });
+            });
+
+            // Enlarge cursor on hover over links and buttons
+            document.querySelectorAll('a, button').forEach(el => {
+                el.addEventListener('mouseover', () => {
+                    cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                    cursorOutline.style.borderColor = 'rgba(255, 255, 255, 0.8)';
+                });
+                el.addEventListener('mouseout', () => {
+                    cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
+                    cursorOutline.style.borderColor = 'rgba(14, 165, 233, 0.5)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
